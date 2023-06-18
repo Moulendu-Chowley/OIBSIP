@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #212121;
+}
+
+body {
+  font-family: "El Messiri", "BenchNine", "Patua One", "Roboto", sans-serif;
+  background-color: #2e2e2e;
+  color: #eeeeee;
+  padding: 5%;
+  margin: 5% 20% 20% 20%;
+  border-radius: 15px;
+}
+
+/*--------Headings--------*/
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+p {
+  font-size: 0.90rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.90rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+ul li {
+  list-style-type: none;
+  margin-bottom: 20px;
+  line-height: 135%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(2, 221, 255);
+}
+
+.down_container {
+  text-align: center;
+}
+
+img {
+  border-radius: 10%;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(5px 5px 5px #000);
+}
+
+.image {
+  margin-bottom: 0px;
+}
+footer {
+  text-align: center;
+}
+/*-------------Media Queries------------*/
+@media (max-width: 375px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    display: table;
+    margin: 30px;
+    font-size: 14px;
+  }
+
+  body {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
