@@ -1,10 +1,5 @@
-# OIBSIP
-This are the project I did during my internship at Oasis Infobyte
-
-Projects are 
-> Web calculator
-> Tribute Page
-> To-Do Web App
+## Tribute Page
+It's a simple page made up with Html , Css to show tribute to the person I admire.
 
 ## Support
 For support, email moulendu@gmail.com or contact on
