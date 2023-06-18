@@ -1,0 +1,282 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #c2c2c2;
+    margin: 0;
+    overflow: hidden;
+    font-size: 7px;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    height: 0.5rem;
+    padding: 0.2rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #808080;
+    border-radius: 3rem;
+    padding: 0.2rem;
+    box-shadow: inset 0 0 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #363636;
+    outline: 1px solid #505050;
+    border-radius: 3rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #282828;
+}
+
+header {
+    height: 3%;
+    background-color: #282828;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1.5rem;
+    box-shadow: 0rem 0.2rem 0.6rem 0 #747474;
+}
+
+#title-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#title-cont h2 {
+    width: 38%;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 3rem;
+    color: #4989c9;
+    text-shadow: 0.1rem 0.1rem 0.1rem #e9e9e9;
+}
+
+
+/*main*/
+
+main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+#main-cont {
+    width: 26rem;
+    height: auto;
+    background-color: #282828;
+    padding: 1rem;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0rem 0.5rem 0.6rem 0 black;
+}
+
+#calc-cont {
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+#output {
+    width: 100%;
+    height: 6rem;
+    background-color: #505050;
+    box-shadow: 0.1rem 0.1rem 0.6rem 0 black inset;
+    margin-bottom: 0.8rem;
+}
+
+#output-text {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 5rem;
+    height: 5.5rem;
+    text-align: end;
+    margin: 1rem;
+    color: #bbbbbb;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#table-cont {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border-radius: 1rem;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    height: auto;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    border-spacing: 1rem;
+    column-width: 3rem;
+}
+
+.key:hover {
+    background-color: #808080;
+}
+
+.operator:hover {
+    background-color: #4989c9;
+}
+
+.btns {
+    background-color: #4989c9;
+    color: white;
+    font-size: 3.5rem;
+}
+
+.btns:hover {
+    background-color: #4989c9;
+}
+
+#equals {
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+#equals:hover {
+    background-color: #101010;
+}
+
+td {
+    font-size: 3.5rem;
+    color: black;
+    background-color: #969696;
+    box-shadow: 0rem 0.2rem 0.4rem 0 black;
+    padding: 0;
+    white-space: nowrap;
+}
+
+td img {
+    height: auto;
+    width: 2rem;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.operator {
+    background-color: #4989c9;
+    color: white;
+    font-size: 3.5rem;
+}
+
+
+/*footer*/
+
+footer {
+    width: 100%;
+    height: 2%;
+    background-color: #282828;
+    position: absolute;
+    bottom: 0;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0rem -0.2rem 0.6rem 0 #282828;
+}
+
+footer h3 {
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    color: #eaeaea;
+    margin: 10px auto;
+    position: absolute;
+    bottom: 3rem;
+}
+
+footer a {
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    color: #bbbbbb;
+}
+
+@media screen and (max-height:350px) {
+    html,
+    body {
+        font-size: 5px;
+    }
+    header {
+        height: 4%;
+        padding: 0.5rem;
+    }
+    #title-cont img {
+        width: 2rem;
+    }
+    #title-cont h2 {
+        width: 32%;
+    }
+    #main-cont {
+        top: 40%;
+    }
+    footer {
+        height: 1%;
+    }
+}
+
+@media screen and (min-height: 450px) {
+    html,
+    body {
+        font-size: 8px;
+    }
+    header {
+        height: 4%;
+        padding: 0.5rem;
+    }
+    #title-cont img {
+        width: 1.5rem;
+    }
+    #main-cont {
+        top: 41%;
+    }
+    footer {
+        height: 2%;
+    }
+    #title-cont h2 {
+        width: 35%;
+    }
+}
+
+@media screen and (min-height: 650px) {
+    html,
+    body {
+        font-size: 10px;
+    }
+    header {
+        height: 5%;
+    }
+    #title-cont h2 {
+        width: 28%;
+    }
+    footer {
+        height: 4%;
+    }
+    #main-cont {
+        width: 28rem;
+    }
+}
+
+@media screen and (min-height: 850px) {
+    html,
+    body {
+        font-size: 12px;
+    }
+    footer {
+        height: 4%;
+    }
+}

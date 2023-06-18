@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Calculator</title>
+    <link rel="icon" type="image/x-icon" href="src/icons/calc-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap"/>
+</head>
+
+<body>
+    <header>
+        <div id="title-cont">
+            <h2>Calculator</h2>
+        </div>
+    </header>
+    <main>
+        <div id="main-cont">
+            <div id="calc-cont">
+                <div id="output">
+                    <h2 id="output-text">0</h2>
+                </div>
+                <div id="table-cont">
+                    <table>
+                        <tr>
+                            <td id="clear" class="btns" alt="clear">C</td>
+                            <td class="operator">÷</td>
+                            <td class="operator">-</td>
+                            <td id="backspace" alt="backspace" class="btns">
+                                <img src="src/symbols/backspace.png" alt="backspace" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="key">7</td>
+                            <td class="key">8</td>
+                            <td class="key">9</td>
+                            <td class="operator">×</td>
+                        </tr>
+                        <tr>
+                            <td class="key">4</td>
+                            <td class="key">5</td>
+                            <td class="key">6</td>
+                            <td class="operator">+</td>
+                        </tr>
+                        <tr>
+                            <td class="key">1</td>
+                            <td class="key">2</td>
+                            <td class="key">3</td>
+                            <td id="equals" rowspan="2">=</td>
+                        </tr>
+                        <tr>
+                            <td alt="feedback" class="btns">
+                                <a target="_blank" href="https://github.com/moulendu-chowley"><img src="src/symbols/feedback.png" alt="feedback" />
+                                </a>
+                            </td>
+                            <td class="key">0</td>
+                            <td class="key">.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a target="_blank" href="https://github.com/moulendu-chowley">
+            <h3>Made with ❤ by Moulendu Chowley</h3>
+        </a>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>   
